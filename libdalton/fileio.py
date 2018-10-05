@@ -361,7 +361,7 @@ def get_print_averages(ana):
 def validate_input(program_path):
     if (len(sys.argv) < 2):
         program_name = program_path.split('/')[-1]
-        
+
         if program_name in _PROGRAM_MESSAGES:
             print('\nUsage: python %s INPUT_FILE\n' % program_name)
             print('INPUT_FILE: %s' % _PROGRAM_MESSAGES[program_name])
